@@ -1,0 +1,15 @@
+<h1>Add department</h1>
+<div class="col-sm-4">
+  <form [formGroup]="deptForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <input
+        type="email"
+        formControlName="deptName"
+        class="form-control"
+        id="deparmentName"
+        placeholder="Department Name"
+      />
+    </div>
+    <button class="btn btn-primary" type="submit">Add</button>
+  </form>
+</div>

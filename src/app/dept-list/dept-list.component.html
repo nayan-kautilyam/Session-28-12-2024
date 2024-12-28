@@ -1,0 +1,20 @@
+<div class="col-sm-4">
+  <h1>Department List</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">DeptID</th>
+        <th scope="col">DeptName</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of departmentList; track $index) {
+        <tr>
+          <th scope="row">{{ item.id }}</th>
+          <td>{{ item.deptName }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+
+</div>
